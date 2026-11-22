@@ -1,5 +1,5 @@
 //your code here
-const price=Element.querySelectorAll("prices");
+const price=Element.querySelectorAll( '[data-ns-test="prices"]');
 let sum=0;
 for(let i=0;i<price.length;i++){
 	sum+=price[i];
@@ -9,4 +9,5 @@ total.setAttribute("data-ns-test","prices");
 const thead=Document.createElement(tr);
 thead.setAttribute("data-ns-test","grandTotal");
 const tdata=Document.createElement(td);
+tr.appendChild(td);
 td.textContent(sum);
